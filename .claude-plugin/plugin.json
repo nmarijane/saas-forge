@@ -1,0 +1,11 @@
+{
+  "name": "saas-forge",
+  "version": "0.1.0",
+  "description": "SaaS project scaffolder for Claude Code — brainstorm, scaffold, and generate full-stack SaaS apps from your terminal",
+  "author": { "name": "Nicolas Meridjen" },
+  "repository": "https://github.com/nmarijane/saas-forge",
+  "license": "MIT",
+  "keywords": ["saas", "boilerplate", "nextjs", "drizzle", "better-auth", "scaffold", "generator"],
+  "skills": "./skills/",
+  "agents": ["./agents/saas-builder.md"]
+}
