@@ -1,8 +1,6 @@
 ---
 name: saas
 description: Use when creating a new SaaS project from the boilerplate. Clones nmarijane/saas-boilerplate, runs brainstorming to refine the idea, removes unused features, and generates business-specific code (models, routes, components) end-to-end.
-argument-hint: "<project description>" [--yes]
-agent: saas-builder
 ---
 
 # Create SaaS Project
