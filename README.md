@@ -6,6 +6,39 @@
 
 *Go from idea to full-stack SaaS app without leaving your terminal.*
 
+</div>
+
+---
+
+## What is saas-forge?
+
+saas-forge is a Claude Code plugin that turns a one-line SaaS idea into a ready-to-run Next.js codebase in minutes. It combines an AI brainstorming phase with automated project scaffolding — so you skip the boilerplate setup and start shipping features immediately.
+
+---
+
+## Why saas-forge?
+
+- **Zero config** — one command, and your project is live: `/saas-forge:saas Your idea here`
+- **Opinionated but flexible** — ships with auth, email, and dashboard by default; billing, i18n, and admin are optional
+- **Production-grade stack** — Next.js 15, Drizzle ORM, Better Auth, shadcn/ui, Stripe
+- **No lock-in** — outputs plain files you own; no runtime dependency on saas-forge
+- **Claude Code native** — runs as a pure Markdown plugin, no build step required
+
+---
+
+## How does saas-forge compare to alternatives?
+
+| | saas-forge | create-t3-app | shipfast | custom boilerplate |
+|---|---|---|---|---|
+| Interactive brainstorming | ✅ | ❌ | ❌ | ❌ |
+| Removes unused features | ✅ | ❌ | ❌ | ❌ |
+| Generates business models | ✅ | ❌ | ❌ | ❌ |
+| Auth (self-hosted) | ✅ Better Auth | ✅ NextAuth | ✅ Supabase | varies |
+| Billing | ✅ optional | ❌ | ✅ Stripe | varies |
+| Setup time | ~5 min | ~10 min | ~30 min | hours |
+
+<div align="center">
+
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Install with skills.sh](https://img.shields.io/badge/skills.sh-install-ff6600)](https://skills.sh)
 [![Claude Code Plugin](https://img.shields.io/badge/claude--code-plugin-blueviolet)](https://code.claude.com/docs/en/plugins)
@@ -154,6 +187,25 @@ No TypeScript. No build step. No `node_modules`. Just Markdown files that tell C
 - Support alternative stacks (Prisma, Lucia Auth, etc.)
 - Add a `/saas-forge:feature` command to add features to existing projects
 - Post-scaffold health checks
+
+---
+
+## FAQ
+
+**Does saas-forge work with existing projects?**
+Not yet — it scaffolds new projects from scratch. A `/saas-forge:feature` command to add features to existing apps is on the roadmap.
+
+**What database does it use?**
+PostgreSQL with Drizzle ORM by default. The scaffolded schema is generated from your idea during brainstorming.
+
+**Is auth self-hosted?**
+Yes. saas-forge uses [Better Auth](https://www.better-auth.com/), which runs on your own infrastructure — no third-party auth vendor dependency.
+
+**Can I use it without Claude Code?**
+saas-forge is built as a Claude Code plugin and requires Claude Code to run. There is no standalone CLI.
+
+**How is it different from just cloning saas-boilerplate?**
+Cloning gives you all features and you decide what to cut. saas-forge brainstorms your idea first, then scaffolds only what you need — including your business models, pages, and routes — already wired up.
 
 ---
 
